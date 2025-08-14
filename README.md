@@ -38,6 +38,3 @@ NextPro solves this by:
 - Offering **visual tools** for analysis
 - **Centralizing** stats for teams, players, and academies in one place
 
-
-   ```bash
-   git clone https://github.com/yourusername/NextPro.git
