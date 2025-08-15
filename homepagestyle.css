@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
 a {
     text-decoration: none;
 }
@@ -248,61 +255,83 @@ td img{
         
         
 .services2 {
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 50px; 
-
-    flex-wrap: wrap; 
-
-    padding: 40px;
-
-}
-
-
-.services2 #blocks {
-
-    width: 48%;
-
-    height: 700px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    text-align: center;
-
-    padding: 30px;
-
-    box-sizing: border-box;
-
-    color: whitesmoke;
+  
+    display: grid;
+  
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  
+    gap: 1rem;
+  
+    padding: 1rem;
 
     background-color: black;
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-    box-shadow: 2px 2px 25px blueviolet;
 
-}   
+.block {
 
-.services2 img {
+    background: blueviolet;
 
-    width: 470px;
+    border-radius: 10px;
 
-    height: 300px;
+    overflow: hidden;
 
-    border-radius: 15%;
+    text-align: center;
 
-    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
 }
+
+
+.block img {
+
+  
+    width: 100%;
+  
+    height: 475px; 
+  
+    object-fit: cover; 
+  
+    display: block;
+}
+
+
+}
+
+
+.block a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+/* Tablet view — 2 columns */
+
+@media (min-width: 600px) {
+
+    .services2 {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+/* Desktop view — more spacing */
+
+@media (min-width: 900px) {
+
+    .services2 {
+
+        gap: 2rem;
+
+    }
+
+}
+
 
 .services2 a h2 {
 
@@ -310,7 +339,7 @@ td img{
 
     padding: 10px 20px;
 
-    background-color: white;
+    background-color: blueviolet;
 
     color: black;
 
@@ -318,16 +347,6 @@ td img{
 
     transition: 0.3s ease;
             
-
-}
-
-.services2 a h2:hover {
-
-    background-color: blueviolet;
-
-    color: white;
-
-    box-shadow: 2px 2px 15px goldenrod;
 
 }
 
