@@ -18,7 +18,7 @@ eliminating the limitations of offline scouting.
 
 ## 🛠 Tech Stack (Example)
 
-- **Frontend:** HTML, CSS, JavaScript (React or Vue)
+- **Frontend:** HTML, CSS, JavaScript (React or Vue, Bootstrap soon)
 - **Backend:** Node.js / Express
 - **Database:** MongoDB / PostgreSQL
 - **Charts & Visualizations:** Chart.js / D3.js
